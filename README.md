@@ -16,6 +16,42 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
+3. Install maps
+
+   ```bash
+    npx expo install react-native-maps
+   ```
+
+4. Current Location
+
+   ```bash
+    npx expo install expo-location
+   ```
+5. Google Place Autocomplete
+
+   ```bash
+   npm install react-native-google-places-autocomplete --save
+   ```
+
+6. With the above we also require
+
+   ```bash
+   npm install react-native-get-random-values
+   ```
+7. Picker / DropDown
+
+   ```bash
+   npx expo install @react-native-picker/picker
+   ```
+8. Image Picker / Camera Enabler
+
+   ```bash
+   npx expo install expo-image-picker
+   ```
+   
+
+
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
