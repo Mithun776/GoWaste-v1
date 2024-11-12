@@ -64,8 +64,8 @@ export default function Profile() {
                     <Image source={require('./../../assets/images/user.png')}
                         style={{ width: 100, height: 100, borderRadius: 99 }}
                     />
-                    <Text style={{ fontSize: 20, color: Colors.BLACK }}>Username</Text>
-                    <Text style={{ fontSize: 13, color: Colors.BLACK, marginTop: 5 }}>Phone Number</Text>
+                    {/* <Text style={{ fontSize: 20, color: Colors.BLACK }}>Username</Text> */}
+                    <Text style={{ fontSize: 20, color: Colors.BLACK, marginTop: 5 }}>Phone Number</Text>
                 </View>
 
             </View>

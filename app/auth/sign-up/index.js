@@ -34,13 +34,13 @@ export default function SignUp() {
                 <Text style={styles.heading}>Create New Account</Text>
 
                 {/* User Name */}
-                <View style={styles.inputContainer}>
-                    <Text>Username:</Text>
-                    <TextInput
-                        style={styles.input}
-                        placeholder='Enter your name'
-                    />
-                </View>
+                {/* <View style={styles.inputContainer}> */}
+                {/* <Text>Username:</Text> */}
+                {/* <TextInput */}
+                {/* style={styles.input} */}
+                {/* placeholder='Enter your name' */}
+                {/* /> */}
+                {/* </View> */}
 
                 {/* Phone Number */}
                 <View style={styles.inputContainer}>
@@ -70,20 +70,20 @@ export default function SignUp() {
                 </View>
 
                 {/* Password */}
-                <View style={styles.inputContainer}>
-                    <Text>Create Password:</Text>
-                    <TextInput
-                        secureTextEntry={secureText} // Toggles visibility based on state
-                        style={styles.input}
-                        placeholder='Enter Password'
-                    />
-                    {/* Toggle show/hide password */}
-                    <TouchableOpacity onPress={toggleSecureText} style={styles.toggleButton}>
-                        <Text style={styles.toggleText}>
-                            {secureText ? 'Show Password' : 'Hide Password'}
-                        </Text>
-                    </TouchableOpacity>
-                </View>
+                {/* <View style={styles.inputContainer}> */}
+                {/* <Text>Create Password:</Text> */}
+                {/* <TextInput */}
+                {/* secureTextEntry={secureText} // Toggles visibility based on state */}
+                {/* style={styles.input} */}
+                {/* placeholder='Enter Password' */}
+                {/* /> */}
+                {/* Toggle show/hide password */}
+                {/* <TouchableOpacity onPress={toggleSecureText} style={styles.toggleButton}> */}
+                {/* <Text style={styles.toggleText}> */}
+                {/* {secureText ? 'Show Password' : 'Hide Password'} */}
+                {/* </Text> */}
+                {/* </TouchableOpacity> */}
+                {/* </View> */}
 
                 {/* Buttons Row - Create Account & Sign In */}
                 <View style={styles.buttonsContainer}>
@@ -129,6 +129,7 @@ const styles = StyleSheet.create({
     },
     inputContainer: {
         marginTop: 20,
+        marginBottom: 20,
     },
     input: {
         padding: 10,

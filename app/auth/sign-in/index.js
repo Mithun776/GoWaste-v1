@@ -45,22 +45,24 @@ export default function SignIn() {
                     />
                 </View>
 
-                {/* Password */}
-                <View style={styles.inputContainer}>
-                    <Text>Password:</Text>
-                    <TextInput
-                        secureTextEntry={secureText} // Toggles visibility based on state
-                        style={styles.input}
-                        placeholder='Enter Password'
-                    />
 
-                    {/* Toggle show/hide password */}
-                    <TouchableOpacity onPress={toggleSecureText} style={styles.toggleButton}>
-                        <Text style={styles.toggleText}>
-                            {secureText ? 'Show Password' : 'Hide Password'}
-                        </Text>
-                    </TouchableOpacity>
-                </View>
+                {/* Password */}
+                {/* <View style={styles.inputContainer}> */}
+                {/* <Text>Password:</Text> */}
+                {/* <TextInput */}
+                {/* secureTextEntry={secureText} // Toggles visibility based on state */}
+                {/* style={styles.input} */}
+                {/* placeholder='Enter Password' */}
+                {/* /> */}
+
+                {/* Toggle show/hide password */}
+                {/* <TouchableOpacity onPress={toggleSecureText} style={styles.toggleButton}> */}
+                {/* <Text style={styles.toggleText}> */}
+                {/* {secureText ? 'Show Password' : 'Hide Password'} */}
+                {/* </Text> */}
+                {/* </TouchableOpacity> */}
+                {/* </View> */}
+
 
                 {/* Sign In Button */}
                 <TouchableOpacity
@@ -116,6 +118,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         borderColor: Colors.GREY,
         marginTop: 8,
+        marginBottom: 15,
         fontSize: width * 0.04, // Dynamic font size for inputs
     },
     toggleButton: {
