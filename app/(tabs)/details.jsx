@@ -98,10 +98,10 @@ export default function Details() {
                         setType(itemValue);
                         handleInputChange('wasteType', itemValue);  // Handle waste type change
                     }}>
-                    <Picker.Item label="Dry Waste" value="dry" />
-                    <Picker.Item label="Wet Waste" value="wet" />
-                    <Picker.Item label="Metal Waste" value="metal" />
-                    <Picker.Item label="Electronic Waste" value="electronic" />
+                    <Picker.Item label="House Waste" value="dry" />
+                    <Picker.Item label="Landfill Waste" value="wet" />
+                    <Picker.Item label="Medical Waste" value="metal" />
+                    {/* <Picker.Item label="Electronic Waste" value="electronic" /> */}
                 </Picker>
             </View>
 
@@ -134,7 +134,7 @@ export default function Details() {
             </View>
 
             <TouchableOpacity style={styles.button}>
-                <Text style={{ color: Colors.WHITE, textAlign: 'center' }}>Submit</Text>
+                <Text style={{ color: Colors.WHITE, textAlign: 'center', fontWeight: 'bold', }}>Submit</Text>
             </TouchableOpacity>
         </ScrollView>
     );

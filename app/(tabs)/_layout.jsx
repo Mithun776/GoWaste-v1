@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Colors from '../utils/Colors';
 
 export default function TabLayout() {
@@ -22,9 +23,9 @@ export default function TabLayout() {
 
             <Tabs.Screen name='details'
                 options={{
-                    tabBarLabel: 'Details',
+                    tabBarLabel: 'Alerts',
                     tabBarActiveTintColor: Colors.GREEN,
-                    tabBarIcon: ({ color, size }) => <Ionicons name="ticket-sharp" size={size} color={color} />
+                    tabBarIcon: ({ color, size }) => <FontAwesome5 name="telegram-plane" size={size} color={color} />
                 }} />
 
             <Tabs.Screen name='profile'

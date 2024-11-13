@@ -34,13 +34,13 @@ export default function SignUp() {
                 <Text style={styles.heading}>Create New Account</Text>
 
                 {/* User Name */}
-                {/* <View style={styles.inputContainer}> */}
-                {/* <Text>Username:</Text> */}
-                {/* <TextInput */}
-                {/* style={styles.input} */}
-                {/* placeholder='Enter your name' */}
-                {/* /> */}
-                {/* </View> */}
+                <View style={styles.inputContainer}>
+                    <Text>Username:</Text>
+                    <TextInput
+                        style={styles.input}
+                        placeholder='Enter your name'
+                    />
+                </View>
 
                 {/* Phone Number */}
                 <View style={styles.inputContainer}>
@@ -89,16 +89,17 @@ export default function SignUp() {
                 <View style={styles.buttonsContainer}>
                     {/* Create Account Button */}
                     <TouchableOpacity
+                        onPress={() => router.replace('(tabs)/locate')}
                         style={styles.createAccountButton}>
-                        <Text style={styles.buttonText}>Create Account</Text>
+                        <Text style={styles.buttonText}>Sign in</Text>
                     </TouchableOpacity>
 
                     {/* Sign In Button */}
-                    <TouchableOpacity
+                    {/* <TouchableOpacity
                         onPress={() => router.replace('auth/sign-in')}
                         style={styles.signInButton}>
                         <Text style={styles.signInText}>Sign In</Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                 </View>
             </View>
         </ScrollView>
@@ -129,7 +130,6 @@ const styles = StyleSheet.create({
     },
     inputContainer: {
         marginTop: 20,
-        marginBottom: 20,
     },
     input: {
         padding: 10,
@@ -159,16 +159,17 @@ const styles = StyleSheet.create({
         color: Colors.BLACK,
         textAlign: 'center',
     },
-    buttonsContainer: {
-        flexDirection: 'row',  // Aligns buttons horizontally
-        justifyContent: 'space-between',  // Distributes buttons on both sides (left and right)
-        marginTop: 20,
-    },
+    // buttonsContainer: {
+    //     flexDirection: 'row',  // Aligns buttons horizontally
+    //     justifyContent: 'space-between',  // Distributes buttons on both sides (left and right)
+    //     marginTop: 20,
+    // },
     createAccountButton: {
-        padding: 10,
+        padding: 15,
         backgroundColor: Colors.PRIMARY,
         borderRadius: 15,
-        flex: 0.47,  // Allows the button to take up 47% of the available width
+        marginTop: 50,
+        marginBottom: 20,  // Allows the button to take up 47% of the available width
     },
     signInButton: {
         padding: 10,

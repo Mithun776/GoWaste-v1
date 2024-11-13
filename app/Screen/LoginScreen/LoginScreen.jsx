@@ -35,7 +35,7 @@ export default function LoginScreen() {
                 <Text style={styles.desc}>Ensure timely waste clearance with GoWaste</Text>
                 <TouchableOpacity style={styles.button}
                     // Navigating to Sign-in
-                    onPress={() => router.push('auth/sign-in')}>
+                    onPress={() => router.push('auth/sign-up')}>
                     <Text style={{
                         color: Colors.WHITE,
                         textAlign: 'center',
