@@ -11,6 +11,7 @@ App/*.orig.*
 App/web-build/
 
 Backend/.venv/
+Backend/.env/
 # macOS
 .DS_Store
 
